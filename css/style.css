@@ -3,6 +3,9 @@
     padding: 0;
  }
 
+ body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
  /*Barra de navegacion*/
  
  .navbar {
@@ -47,7 +50,7 @@
 
 .logo-text p {
   margin: 0;
-  color: #cfcece;
+  color: #fff;
 }
 
 .nav-links {
@@ -64,7 +67,7 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: #dddddd;
+  color: #fff;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease-in-out;
@@ -95,7 +98,7 @@
 
 .fullscreen-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -150,6 +153,8 @@
 
 .fas{margin: 7px;}
 
+/*footer*/
+
 #footer-box {
   background-color: #212121;
   width: 100%;
@@ -201,6 +206,8 @@
   margin-top: 20px;
 }
 
+/*Tabla de precios*/
+
 .container-price {
   display: flex;
   justify-content: center;
@@ -240,17 +247,69 @@
   padding: 15px;
 }
 
+
 #precios tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
+#precios td p{
+ font-size: 10px;
+ color:#909090;
+ text-align: center;
+}
+
 /* Estilos para los encabezados de sección */
-.section-title {
+.section-price {
   background-color: #539c17;
   color: #fff;
   font-size: 24px;
   text-align: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding: 14px;
+}
+
+/*Botones*/
+
+.btn-option{
+  padding: 13px;
+  width: 180px;
+  margin: 20px;
+  background-color: #539c17;
+  border-radius: 25px;
+  color:#fff;
+  font-size: 25px;
+}
+.btn-option:hover{
+  background-color: #3b641a;
+  cursor:pointer;
+}
+
+.conteiner-opcion{
+  width:100%;
+  height: auto;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+}
+.section-option h2 {
+  color: #539c17;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+}
+.section-option h2 {
+  color: #539c17;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+}
+.section-option p {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
   padding: 14px;
 }
