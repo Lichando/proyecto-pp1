@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="/img/green-real-estate-.jpg">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <body>
@@ -269,6 +270,26 @@
               </table>
             </section>
           </div>
+         <section class="formulario">
+          <h2>¡Contactate con nosotros!</h2>
+          <form method="post" action="enviar.php">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      
+              <div class="captcha-container">
+                <label for="scales">No soy un robot</label>
+                <input type="checkbox" id="scales" name="scales" required>
+            </div>
+      
+              <input type="submit" value="Enviar" onclick="validarCaptcha()">
+          </form>
+         </section> 
     </main>
     <footer id="footer-box">
          <div id="footer">

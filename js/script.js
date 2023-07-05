@@ -39,4 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
     requestAnimationFrame(scroll);
   }
-  
+  function validarCaptcha() {
+    var checkbox = document.getElementById("scales");
+
+    if (checkbox.checked) {
+        alert("¡No eres un robot!");
+        // Aquí puedes continuar con el procesamiento del formulario
+    } else {
+        alert("Por favor, marca la casilla para verificar que no eres un robot.");
+    }
+}  
