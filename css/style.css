@@ -88,6 +88,40 @@
   background-color: #3b641a;
 }
 
+/*Flecha para volver arriba*/
+.go-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f1f1f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.go-top-button.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow-up {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-135deg);
+}
+
+
+
 /* Inicio */
 .fullscreen-image {
   position: relative;
@@ -138,6 +172,7 @@
   border: 2px #fff solid;
   border-radius: 100%;
   align-items: center;
+  cursor: pointer;
 }
 
 @keyframes scrollAnimation {
@@ -291,6 +326,7 @@
   display:flex;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .section-option h2 {
   color: #539c17;
@@ -312,4 +348,181 @@
   font-weight: bold;
   text-align: center;
   padding: 14px;
+}
+
+
+/*Seccion de propiedades en venta*/
+
+.container-houses{
+  width:100%;
+  height: auto;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-houses h2 {
+  color: #539c17;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+}
+.section-houses p {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+}
+
+
+.property-section {
+  background-color:#5f8f38;
+}
+.property-section h2 {
+  margin: 20px;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  
+}
+.property-section p {
+  margin: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+.property-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.property-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.property-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.property-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.property-overlay h3,
+.property-overlay p,
+.property-overlay a {
+  margin: 0;
+}
+
+.property-overlay h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.property-overlay a {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #539c17;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  justify-content: center;
+
+}
+
+.property-overlay a:hover{
+ background-color:#3b641a}
+
+
+
+
+/* Estilos de la sección de contenido */
+
+.members{
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.members h2{
+
+  text-align: center;
+  font-size: 35px;
+  color: #539c17;
+  margin: 30px;
+}
+
+
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.member {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.member img {
+  width: 300px;
+  height: auto;
+}
+
+.member-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.member:hover .member-overlay {
+  opacity: 1;
+}
+
+.member h2,
+.member h3,
+.member h4 {
+  margin: 0;
+}
+
+.member p {
+  margin: 5px 0 0;
 }
