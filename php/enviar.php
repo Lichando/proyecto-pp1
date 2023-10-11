@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
     
-    $destinatario = "tucorreo@example.com"; // Reemplaza con tu dirección de correo electrónico
+    $destinatario = "greenhousepruebas@gmail.com";
     
     $asunto = "Mensaje de contacto";
     
@@ -20,5 +20,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo nuevamente.";
     }
 }
-?>
-

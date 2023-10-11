@@ -5,6 +5,7 @@
 
  body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px; /* Ajusta esto según el alto de tu encabezado */
  }
  /*Barra de navegacion*/
  
@@ -120,490 +121,56 @@
   transform: rotate(-135deg);
 }
 
-
-
-/* Inicio */
-.fullscreen-image {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #2522227a;
-}
-
-.fullscreen-image img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.fullscreen-image .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
-
-.fullscreen-image .content h1 {
-  font-size: 40px;
-  margin: 20px;
-}
-
-.fullscreen-image .content p {
-  font-size: 20px;
-  margin-top: 318px;
-}
-
-.scroll-down-arrow {
-  position: absolute;
-  bottom: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  color: #fff;
-  font-size: 24px;
-  animation: scrollAnimation 1.5s infinite;
-  border: 2px #fff solid;
-  border-radius: 100%;
-  align-items: center;
-  cursor: pointer;
-}
-
-@keyframes scrollAnimation {
-  0%, 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-}
-
-.fas{margin: 7px;}
-
-/*footer*/
-
-#footer-box {
-  background-color: #212121;
-  width: 100%;
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  color: #fff;
-}
-
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-
-.footer-col b {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.footer-col-contacto {
-  text-align: center;
-}
-
-
-
-#footer-logo {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-#footer-redes {
-  margin-top: 20px;
-  padding-left: 0;
-  margin-left: 60px;
-}
-
-#footer-marcas {
-  width: 100%;
-  background-color: #0e0e0e;
-  text-align: center;
-  font-size: 12px;
-  color: #909090;
-  margin-top: 20px;
-}
-
-/*Tabla de precios*/
-
-.container-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #539c17;
-  padding: 20px;
-}
-
-#precios-box {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-}
-
-/* Estilos para la tabla */
-#precios {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  padding: 15px;
-}
-
-#precios th, #precios td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-#precios th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
-}
-
-
-#precios tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-#precios td p{
- font-size: 10px;
- color:#909090;
- text-align: center;
-}
-
-/* Estilos para los encabezados de sección */
-.section-price {
-  background-color: #539c17;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 14px;
-}
-
-/*Botones*/
-
-.btn-option{
-  padding: 13px;
-  width: 180px;
-  margin: 20px;
-  background-color: #539c17;
-  border-radius: 25px;
-  color:#fff;
-  font-size: 25px;
-}
-.btn-option:hover{
-  background-color: #3b641a;
-  cursor:pointer;
-}
-
-.conteiner-opcion{
-  width:100%;
-  height: auto;
-  display:flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-.section-option h2 {
-  color: #539c17;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px;
-}
-.section-option h2 {
-  color: #539c17;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px;
-}
-.section-option p {
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px;
-}
-
-
-/*Seccion de propiedades en venta*/
-
-.container-houses{
-  width:100%;
-  height: auto;
-  display:flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.section-houses h2 {
-  color: #539c17;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px;
-}
-.section-houses p {
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px;
-}
-
-
-.property-section {
-  background-color:#5f8f38;
-}
-.property-section h2 {
-  margin: 20px;
-  font-size: 35px;
-  color: #fff;
-  text-align: center;
+  /*footer*/
   
-}
-.property-section p {
-  margin: 20px;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
+  #footer-box {
+    background-color: #212121;
+    width: 100%;
+  }
   
-}
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .footer-col b {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col-contacto {
+    text-align: center;
+  }
+  
+  
+  
+  #footer-logo {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  #footer-redes {
+    margin-top: 20px;
+    padding-left: 0;
+    margin-left: 60px;
+  }
+  
+  #footer-marcas {
+    width: 100%;
+    background-color: #0e0e0e;
+    text-align: center;
+    font-size: 12px;
+    color: #909090;
+    margin-top: 20px;
+  }
 
-.property-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px;
-
-}
-
-.property-item {
-  flex: 0 0 calc(33.33% - 20px);
-  margin-bottom: 20px;
-}
-
-.property-image {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.property-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.property-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-}
-
-.property-overlay h3,
-.property-overlay p,
-.property-overlay a {
-  margin: 0;
-}
-
-.property-overlay h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.property-overlay a {
-  display: flex;
-  padding: 5px 10px;
-  background-color: #539c17;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  justify-content: center;
-
-}
-
-.property-overlay a:hover{
- background-color:#3b641a}
-
-
-
-
-/* Estilos de la sección de contenido */
-
-.members{
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-
-.members h2{
-
-  text-align: center;
-  font-size: 35px;
-  color: #539c17;
-  margin: 30px;
-}
-
-
-
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  justify-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.member {
-  position: relative;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.member img {
-  width: 300px;
-  height: auto;
-}
-
-.member-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.member:hover .member-overlay {
-  opacity: 1;
-}
-
-.member h2,
-.member h3,
-.member h4 {
-  margin: 0;
-}
-
-.member p {
-  margin: 5px 0 0;
-}
-
-.formulario{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.formulario h2 {
-  text-align: center;
-  margin: 20px;
-  font-size: 35px;
-  color: #539c17;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  align-items: center;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"]
-{
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #000000;
-  border-radius: 4px;
-}
-
-textarea {
-  height: 120px !important;
-  width: 433px !important;
-}
-
-.captcha-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  background: #cdcdcd;
-  border-radius: 5px;
-  text-align: center;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  padding: 20px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  width: 395px;
-  height: auto;
-}
-.captcha-container label {
-  margin-right: 20px;
-  text-decoration: underline;
-  font-size: 15px;
-  color: #000000;
-}
-
-input[type="checkbox"] {
-  margin-top: -5px;
-    transform: scale(1.5);
-}
-
-input[type="submit"] {
-  background-color: #539c17;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover{
-  background-color: #3b641a;
-}

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green House | Broker Inmobilirio. </title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="/img/green-real-estate-.jpg">
+    <!-- Agrega el enlace a la biblioteca Owl Carousel (jQuery es requerido) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
@@ -45,17 +50,25 @@
         </section>
 
         <section style="margin: 80px;">
-         <div class="section-option">
-          <h2>¿Que operacion estas buscando hacer?</h2>
-          <p>Te brindamos las mejores prestaciones para que puedas realizar
-            <br>todas tus operaciones de la manera mas efectiva del mercado</p></div>
+          <div class="section-option">
+            <h2>¿Qué operación estás buscando hacer?</h2>
+            <p>Te brindamos las mejores prestaciones para que puedas realizar
+              <br>todas tus operaciones de la manera más efectiva del mercado</p>
+          </div>
           <div class="conteiner-opcion">
-            <div><img src="../img/buying-a-house-property.png">
-            <div class="btn-option"> Comprar</div></div>
-            <div><img src="../img/casa.png">
-              <div class="btn-option"> Vender</div></div>
-           </div>
+            <div>
+              <img src="../img/buying-a-house-property.png">
+              <p>Encuentra las mejores ofertas en propiedades y adquiere la casa de tus sueños. Nuestro equipo de expertos te guiará en todo el proceso de compra para que tomes la mejor decisión.</p> <!-- Agrega el texto que desees aquí -->
+              <div class="btn-sel">Comprar</div>
+            </div>
+            <div>
+              <img src="../img/casa.png">
+              <p>Vende tu propiedad de forma rápida y al mejor precio con nuestra ayuda. Contamos con una amplia red de compradores potenciales y te asesoramos en cada paso del proceso de venta.</p> <!-- Agrega el texto que desees aquí -->
+              <div class="btn-sel">Vender</div>
+            </div>
+          </div>
         </section>
+        
 
         <div class="property-section">
           <h2>Propiedades destacadas</h2>
@@ -171,125 +184,154 @@
           </div>
           </div>
         </section>
-      
-        <div class="container-price">
-            <section id="precios-box">
-             <div class="section-price">Planes y precios</div>
-              <table id="precios">
-                <tr>
-                  <th>Tipo de Plan</th>
-                  <th>PERSONAL</th>
-                  <th>INICIAL</th>
-                  <th>EQUIPO</th>
-                  <th>PROFESIONAL</th>
-                  <th>CORPORATIVO</th>
-                </tr>
-                <tr>
-                  <td>Precio
-                  <p>por mes en $ Argentinos + IVA</p></td> 
-                  <td>$6.007</td>
-                  <td>$14.901</td>
-                  <td>$25.878</td>
-                  <td>$41.150</td>
-                  <td>$68.260</td>
-                </tr>
-                <tr>
-                    <td>Usuarios<p>Cantidad de usuarios activos</p></td>
-                    <td>1 Usuario</td>
-                    <td>2 Usuarios</td>
-                    <td>Hasta 4 Usuarios</td>
-                    <td>Hasta 10 Usuarios</td>
-                    <td>Hasta 15 Usuarios</td>
-                  </tr>
-
-                  <tr>
-                    <td>Propiedades<p>Solo cuentan las disponibles</p></td>
-                    <td><i class="fa fa-home" aria-hidden="true"></i> 15</td>
-                    <td><i class="fa fa-home" aria-hidden="true"></i> 40</td>
-                    <td><i class="fa fa-home" aria-hidden="true"></i> 90</td>
-                    <td><i class="fa fa-home" aria-hidden="true"></i> 200</td>
-                    <td><i class="fa fa-home" aria-hidden="true"></i> 300</td>
-                  </tr>
-
-                  <tr>
-                    <td>Emprendimientos<p>Edificios, barrios, loteos</p></td>
-                    <td><i class="fa fa-building" aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td><i class="fas fa-building" aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td><i class="fa fa-building" aria-hidden="true"></i> 2</td>
-                    <td><i class="fa fa-building" aria-hidden="true"></i>10</td>
-                    <td><i class="fa fa-building" aria-hidden="true"></i> Ilimitados</td>
-                  </tr>
-
-                  <tr>
-                    <td>Seguimientos Automáticos<p>Mejorá la atención al cliente</p></td>
-                    <td><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td>Ilimitados</td>
-                    <td>Ilimitados y configurables</td>
-                    <td>Ilimitados y configurables</td>
-                  </tr>
-
-                  <tr>
-                    <td>Respuestas Rápidas<p>Plantillas de respuestas</p></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                    <td>Sí, automatizadas</td>
-                    <td>Sí, automatizadas</td>
-                  </tr>
-
-                  <tr>
-                    <td>Reportes<p>Generados a partir de tus datos</p></td>
-                    <td><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td><i class="fa fa-times-circle" aria-hidden="true" style="color:red"></i></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                    <td><i class="fa fa-check-circle" aria-hidden="true" style="color:green"></i></td>
-                  </tr>
-
-                  <tr>
-                    <td><u>Sitio Web</u><p>Mobile, SEO, Autoadministrable</p></td>
-                    <td>Básico</td>
-                    <td>Básico</td>
-                    <td>Básico</td>
-                    <td>Premium /
-                        Integración por API</td>
-                    <td>Premium /
-                        Integración por API</td>
-                  </tr>
-                  <tr>
-                    <td>Soporte<p>Asistencia al Usuario</p></td>
-                    <td>Chat</td>
-                    <td>Chat</td>
-                    <td>Chat y linea
-                        teléfonica</td>
-                    <td>Chat y linea
-                        teléfonica</td>
-                    <td>Chat y linea telefónica prioritaria</td>
-                  </tr>
-              </table>
-            </section>
-          </div>
-         <section class="formulario">
-          <h2>¡Contactate con nosotros!</h2>
-          <form method="post" action="enviar.php">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required>
-      
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-      
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-      
-              <div class="captcha-container">
-                <label for="scales">No soy un robot</label>
-                <input type="checkbox" id="scales" name="scales" required>
+        <div class="testimonials-container">
+          <div class="testimonials-carousel owl-carousel">
+          <div class="testimonial">
+            <div class="testimonial-image">
+              <img src="https://img.freepik.com/foto-gratis/apuesto-joven-empresario-traje_273609-6513.jpg" alt="Persona 1">
             </div>
-      
-              <input type="submit" value="Enviar" onclick="validarCaptcha()">
-          </form>
-         </section> 
+            <!-- Testimonio 1: Corredor Inmobiliario -->
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="corredor.jpg" alt="Corredor Inmobiliario">
+              </div>
+              <div class="testimonial-content">
+                <div class="testimonial-name">María Rodríguez</div>
+                <div class="testimonial-profession">Corredora Inmobiliaria</div>
+                <div class="testimonial-rating">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <div class="testimonial-text">
+                  "Esta plataforma ha sido una herramienta invaluable para mi negocio. Me ha ayudado a conectar con clientes de manera efectiva y agilizar mis transacciones."
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 2: Escribano -->
+              <div class="testimonial">
+                <div class="testimonial-image">
+                  <img src="escribano.jpg" alt="Escribano">
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-name">Luis Martínez</div>
+                  <div class="testimonial-profession">Escribano</div>
+                  <div class="testimonial-rating">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                  </div>
+                  <div class="testimonial-text">
+                    "Recomiendo encarecidamente esta plataforma para todos los profesionales del sector inmobiliario. Facilita enormemente los procesos legales y documentales."
+                  </div>
+                </div>
+              </div>
+
+                <!-- Testimonio 3: Comprador -->
+              <div class="testimonial">
+                <div class="testimonial-image">
+                  <img src="comprador.jpg" alt="Comprador">
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-name">Ana Gómez</div>
+                  <div class="testimonial-profession">Compradora</div>
+                  <div class="testimonial-rating">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                  </div>
+                  <div class="testimonial-text">
+                    "Gracias a esta plataforma, encontré mi hogar ideal de manera rápida y sencilla. El proceso de búsqueda y selección fue increíblemente eficiente."
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 4: Vendedor -->
+              <div class="testimonial">
+                <div class="testimonial-image">
+                  <img src="vendedor.jpg" alt="Vendedor">
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-name">Carlos Pérez</div>
+                  <div class="testimonial-profession">Vendedor</div>
+                  <div class="testimonial-rating">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                  </div>
+                  <div class="testimonial-text">
+                    "Nunca imaginé que la venta de mi propiedad sería tan fluida. Gracias a esta plataforma, encontré un comprador confiable y cerré el trato sin complicaciones."
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 5: Asesor Inmobiliario -->
+              <div class="testimonial">
+                <div class="testimonial-image">
+                  <img src="asesor.jpg" alt="Asesor Inmobiliario">
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-name">Jorge López</div>
+                  <div class="testimonial-profession">Asesor Inmobiliario</div>
+                  <div class="testimonial-rating">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                  </div>
+                  <div class="testimonial-text">
+                    "Recomiendo esta plataforma a todos mis clientes. Les brinda información detallada y actualizada, lo que facilita la toma de decisiones informadas."
+                  </div>
+                </div>
+              </div>
+              </div>>
+        </div>
+          <section class="formulario">
+            <div class="imagen-costado">
+              <img src="../img/hombre-irreconocible-vestido-informalmente-usando-telefono-inteligente-trabajo-oficina.jpg" alt="hombre-irreconocible-vestido-informalmente-usando-telefono-inteligente-trabajo-oficina">
+            </div>
+            <div class="contenido-formulario">
+              <h2>¡Contactate con nosotros!</h2>
+              <form method="post" id="miFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+          
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+          
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required style="padding: 10px;"></textarea>
+</textarea>
+          
+                <div class="captcha-container">
+                  <label for="scales">No soy un robot</label>
+                  <input type="checkbox" id="scales" name="scales" required>
+                </div>
+                <a href="#" id="enviarBtn">Enviar</a>
+              </form>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  document.getElementById("enviarBtn").addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var checkbox = document.getElementById("scales");
+                    if (!checkbox.checked) {
+                      alert("Por favor, marca la casilla 'No soy un robot' antes de enviar el formulario.");
+                    } else {
+                      location.reload();
+                    }
+                  });
+                });
+                </script>
+            </div>
+          </section>
+          
     </main>
     <footer id="footer-box">
          <div id="footer">

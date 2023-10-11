@@ -1,0 +1,474 @@
+/* Inicio */
+.fullscreen-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #2522227a;
+  }
+  
+  .fullscreen-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .fullscreen-image .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .fullscreen-image .content h1 {
+    font-size: 40px;
+    margin: 20px;
+  }
+  
+  .fullscreen-image .content p {
+    font-size: 20px;
+    margin-top: 318px;
+  }
+  
+  .scroll-down-arrow {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    animation: scrollAnimation 1.5s infinite;
+    border: 2px #fff solid;
+    border-radius: 100%;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  @keyframes scrollAnimation {
+    0%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  
+  .fas{margin: 7px;}
+  
+ /* Estilos para la sección contenedora */
+ .contenedor-principal {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para la sección de opciones */
+.conteiner-opcion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilos para cada opción */
+.conteiner-opcion div {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(83, 156, 23);
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-opcion div img {
+  max-width: 150px;
+}
+
+/* Estilos para el texto debajo de las imágenes */
+.conteiner-opcion div p {
+  color: #333;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título */
+.section-option h2 {
+  color: #539c17;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para el párrafo de introducción */
+.section-option p {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+  /*Botones*/
+  
+  .btn-sel{
+    padding: 13px;
+    width: 180px;
+    margin: 20px;
+    background-color: #539c17;
+    border-radius: 25px;
+    color:#fff;
+    font-size: 25px;
+    margin:;
+  }
+  .btn-sel:hover{
+    background-color: #3b641a;
+    cursor:pointer;
+  }
+  
+ 
+  
+  /*Seccion de propiedades en venta*/
+  
+  .container-houses{
+    width:100%;
+    height: auto;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .section-houses h2 {
+    color: #539c17;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px;
+  }
+  .section-houses p {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px;
+  }
+  
+  
+  .property-section {
+    background-color:#5f8f38;
+    padding: 20px;
+  }
+  .property-section h2 {
+    margin: 20px;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    
+  }
+  .property-section p {
+    margin: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    
+  }
+  
+  .property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  
+  }
+  
+  .property-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .property-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .property-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .property-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+  }
+  
+  .property-overlay h3,
+  .property-overlay p,
+  .property-overlay a {
+    margin: 0;
+  }
+  
+  .property-overlay h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .property-overlay a {
+    display: flex;
+    padding: 5px 10px;
+    background-color: #539c17;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+  
+  }
+  
+  .property-overlay a:hover{
+   background-color:#3b641a}
+  
+  
+  
+  
+  /* Estilos de la sección de contenido */
+  
+  .members{
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .members h2{
+  
+    text-align: center;
+    font-size: 35px;
+    color: #539c17;
+    margin: 30px;
+  }
+  
+  
+  
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .member {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .member img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .member-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .member:hover .member-overlay {
+    opacity: 1;
+  }
+  
+  .member h2,
+  .member h3,
+  .member h4 {
+    margin: 0;
+  }
+  
+  .member p {
+    margin: 5px 0 0;
+  }
+  
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .imagen-costado {
+    display: flex;
+  }
+  
+  .imagen-costado img {
+    Width: 800px; /* Ajustar el ancho de la imagen para que ocupe el 80% del espacio del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  
+  /* Estilos para el contenido del formulario */
+  .contenido-formulario {
+    flex: 1; /* Permite que el contenido del formulario ocupe el doble de espacio que la imagen */
+  }
+  
+  .formulario h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #458f10;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"]
+  {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 120px !important;
+    width: 433px !important;
+  }
+  
+  .captcha-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #cdcdcd;
+    border-radius: 5px;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 395px;
+    height: auto;
+  }
+  .captcha-container label {
+    margin-right: 20px;
+    text-decoration: underline;
+    font-size: 15px;
+    color: #000000;
+  }
+  
+  input[type="checkbox"] {
+    margin-top: -5px;
+      transform: scale(1.5);
+  }
+  
+  form a{
+    background-color: #539c17;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  form a[type="submit"]:hover{
+    background-color: #3b641a;
+  }
+
+
+  .testimonials-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .testimonial {
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .testimonial-content {
+    flex: 3;
+    padding: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
+  .testimonial-profession {
+    color: #777;
+  }
+  
+  .testimonial-rating {
+    margin: 5px 0;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    margin-right: 2px;
+  }
+  
+  .testimonial-text {
+    margin-top: 10px;
+  }

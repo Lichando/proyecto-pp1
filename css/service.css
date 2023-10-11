@@ -1,0 +1,83 @@
+
+  
+  /*Tabla de precios*/
+  
+  .container-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #539c17;
+    padding: 20px;
+  }
+  
+  #precios-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+  }
+  
+  /* Estilos para la tabla */
+  #precios {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #precios th, #precios td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  #precios th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  
+  #precios tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #precios td p{
+   font-size: 10px;
+   color:#909090;
+   text-align: center;
+  }
+  
+  /* Estilos para los encabezados de sección */
+  .section-price {
+    background-color: #539c17;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 14px;
+  }
+  
+  /*Botones*/
+  
+  .btn-sel{
+    padding: 13px;
+    width: 180px;
+    margin: 20px;
+    background-color: #539c17;
+    border-radius: 25px;
+    color:#fff;
+    font-size: 25px;
+    margin:;
+  }
+  .btn-sel:hover{
+    background-color: #3b641a;
+    cursor:pointer;
+  }
+  
+ 
