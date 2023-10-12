@@ -60,20 +60,48 @@ nav{
     display: flex;
     flex-direction: column;
 } 
+.icon{
+    width: 40px;
+    height: 30px;
+    border: 1px #458f10 solid;
+    border-right: 1px grey solid ;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
+.icon2{
+    width: 40px;
+    height: 30px;
+    border: 1px #458f10 solid;
+    border-left:none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
+
+i{
+    cursor: pointer;
+}
+
 
 svg{
     fill:#000000;
 }
 
 input{
-    width: 200px;
+    width: auto;
     height: 26px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    padding:2px;
+    padding: 2px;
     border: 1px #458f10 solid;
     outline: none;
     border-left: none;
+    border-right: none;
 }
 input:hover{
     border-left: none;
