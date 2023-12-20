@@ -5,274 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green House | Broker Inmobilirio. </title>
     <link rel="stylesheet" href="./css/propiedades.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <style>
-.property-details {
-  display: flex;
-  margin: 60px;
-}
-
-.image-container {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  background-color: #2b4b11;
-  border-bottom-left-radius: 5px;
-}
-
-.main-image img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 5px;
-}
-
-.carousel-navigation-buttons {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  z-index: 1;
-}
-
-
-.prev-button,
-.next-button {
-  padding: 10px;
-  font-size: 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.prev-button:hover,
-.next-button:hover {
-  background-color: #555;
-}
-
-.carousel-navigation {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.carousel-navigation img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  margin: 0 5px;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-navigation img:hover {
-  opacity: 1;
-}
-
-.carousel-navigation img.active {
-  border: 2px solid rgb(0, 0, 0);
-}
-
-.property-details-container {
-  width: 90%;
-  padding-left: 10px;
-  color: #fff;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-
-
-.property-title {
-  margin-top: 0;
-  text-align: center;
-  margin:10px;
-}
-
-.property-info {
-  margin-top: 20px;
-}
-
-.section-icon-features {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  border-top: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-}
-
-.icon-feature {
-  display: flex;
-  align-items: center;
-
-  text-align: center;
-}
-
-
-.icon-feature svg {
-  margin: 10px;
-  
-}
-
-.property-info p {
-  margin: 5px 0;
- 
-}
-
-.property-description p {
-  margin:10px;
-  font-size: 15px;
-  text-align: center;
-}
-.property-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.property-contact h3 {
-  margin-bottom: 10px;
-}
-
-.contact-container {
-  display: flex;
-  align-items: center;
-}
-
-.contact-textarea {
-  flex: 1;
-  width: 720px;
-  height: 46px !important;
-  font-size: 14px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  margin-right: 10px;
-}
-
-.submit-button {
-  font-weight: bold;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #539c17;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.submit-button:hover {
-  background-color: #3b641a;
-}
-.property-details {
-  margin-top: 40px;
-}
-
-.property-details h3 {
-  margin-bottom: 10px;
-}
-
-.accordion-container {
-  margin-top: 20px;
-}
-
-.accordion-item {
-  margin-bottom: 10px;
-}
-
-.accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  background-color: #539c17;
-  padding: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.accordion-header h4 {
-  margin: 0;
-}
-
-.accordion-icon {
-  width: 10px;
-  height: 10px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-.accordion-content {
-  margin-left: 20px;
-  display: none;
-}
-
-.feature-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #549123;
-  margin-left: -20px;
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px ;
-}
-
-
-.feature-list li {
-  margin: 5px;
-}
-
-.active .accordion-content {
-  display: block;
-}
-
-.active .accordion-icon {
-  transform: rotate(-135deg);
-}
-
-.accordion-characteristic{
-  display: flex;
-  border-radius: 5px
-}
-.accordion-characteristic svg{
-  margin-right: 8px;
-}
-      </style>
-    </head>
+   </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-              <a href="../index.html">
-              <img src="./img/green-real-estate-.jpg" alt="GreenHouse" title="GreenHouse Broker">
-              <div class="logo-text">
-                <h2>Green House</h2>
-                <p>Broker Inmobiliario</p>
-              </div>
-              </a>
-            </div>
-            <ul class="nav-links">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../contact.html">Contacto</a></li>
-              <li><a href="../service.html">Servicios</a></li>
-              <li class="login-btn"><a href="../login.html">Iniciar Sesion</a></li>
-            </ul>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="icon-bars">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#1aaf18" d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z"/></svg>
+        </div>
+        <div class="icon-close">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 352 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#19af27" d="M242.7 256l100.1-100.1c12.3-12.3 12.3-32.2 0-44.5l-22.2-22.2c-12.3-12.3-32.2-12.3-44.5 0L176 189.3 75.9 89.2c-12.3-12.3-32.2-12.3-44.5 0L9.2 111.5c-12.3 12.3-12.3 32.2 0 44.5L109.3 256 9.2 356.1c-12.3 12.3-12.3 32.2 0 44.5l22.2 22.2c12.3 12.3 32.2 12.3 44.5 0L176 322.7l100.1 100.1c12.3 12.3 32.2 12.3 44.5 0l22.2-22.2c12.3-12.3 12.3-32.2 0-44.5L242.7 256z"/></svg>
+        </div>
+      </div>
+      
+            
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../../img/green-real-estate-.jpg" alt="GreenHouse" title="GreenHouse Broker">
+          <div class="logo-text">
+            <h2>Green House</h2>
+            <p>Broker Inmobiliario</p>
+          </div>
+        </a>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../contact.html">Contacto</a></li>
+        <li><a href="../service.html">Servicios</a></li>
+        <li class="login-btn"><a href="../login.html">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
     <section>
       <div class="property-details">
+        <div class="contenedor-propiedades">
         <div class="image-container">
           <div class="main-image">
             <img src="https://imgar.zonapropcdn.com/avisos/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Imagen 1" class="center-image">
@@ -287,6 +56,7 @@
             <img src="https://imgar.zonapropcdn.com/avisos/1/00/51/90/48/94/1200x1200/1871562583.jpg" alt="Imagen 3" class="center-image">
           </div>
         </div>
+      </div>
         <div class="property-details-container">
          <h2 class="property-title">
          <h2 style="font-size: 25px;">
@@ -489,5 +259,7 @@ accordionHeaders.forEach(header => {
 
 
 </script>
+
+<script src="../../js/script.js"></script>
 </body>
 </html>

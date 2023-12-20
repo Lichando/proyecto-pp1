@@ -134,3 +134,17 @@ input:hover{
     text-decoration: none;
   }
   
+
+  @media only screen and (max-width: 767px) {
+main{
+    background:  linear-gradient(#2f3a31, #295330);
+}
+.login{
+    width: 100% !important;
+    max-height: 100%;
+    padding: 65%;
+}
+
+
+
+  }

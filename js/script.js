@@ -39,4 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
     requestAnimationFrame(scroll);
   }
+  function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    var menuToggle = document.querySelector('.menu-toggle');
+  
+    navLinks.classList.toggle('show');
+    menuToggle.classList.toggle('show');
+  }
+  
+  
+  
+  
   

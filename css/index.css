@@ -1,3 +1,9 @@
+main{
+  border: 0;
+  padding: 0;
+  margin:0;
+}
+
 /* Inicio */
 .fullscreen-image {
     position: relative;
@@ -416,59 +422,109 @@
   }
 
 
-  .testimonials-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    overflow: hidden;
-  }
-  
-  .testimonial {
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+
+  @media only screen and (max-width: 767px) {
+
+    .imagen-costado img{
+      visibility: hidden;
+      display: none;
+      position: absolute;
+    }
+    .fullscreen-image {
+      height: 130vh;
+      width: 120vh;
+    }
+    .fullscreen-image img {
+      
+      padding:20px;
+      position: relative;
+      height: 128vh;
+      overflow: hidden;
+      background-color: #2522227a;
+    }
+   .opcion{
+    
     display: flex;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonial-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
+    align-items: baseline;
+    padding: 20px;
+    }
+   
+    .section-option{
+        margin: 25px 0px 0px -230px;
+        width: 78vh;
+    }
+
+    .conteiner-opcion{
+      margin-left: 140px;
+      width: 80vh;
+    }
+    .section-option h2 {
+      color: #539c17;
+      font-size: 25px;
+      }
+
+    .section-option p {
+      color: #333;
+      font-size: 14px;  
+
   }
-  
-  .testimonial-image img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .testimonial-content {
-    flex: 3;
-    padding: 10px;
-  }
-  
-  .testimonial-name {
-    font-weight: bold;
-  }
-  
-  .testimonial-profession {
-    color: #777;
-  }
-  
-  .testimonial-rating {
-    margin: 5px 0;
-  }
-  
-  .star {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #FFD700;
-    border-radius: 50%;
-    margin-right: 2px;
-  }
-  
-  .testimonial-text {
-    margin-top: 10px;
-  }
+  .property-section {
+    background-color: #5f8f38;
+    padding: 44px;
+    width: 110vh;}
+
+    .members {
+      margin-top: 10px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center; 
+      width: 60vh; }
+
+     .member-grid {
+        display: flex;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 430px;}
+
+        .members h2 {
+          display: flex;
+          text-align: center;
+          font-size: 40px;
+          color: #539c17;
+          margin-left: 470px;
+       }
+
+
+          .formulario {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 110vh;
+            height: 100vh;
+          }
+          
+
+         
+      
+      
+      
+    }
+

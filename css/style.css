@@ -8,6 +8,16 @@
     margin-top: 60px; /* Ajusta esto según el alto de tu encabezado */
  }
  /*Barra de navegacion*/
+
+ .menu-toggle {
+  display: none; 
+  cursor: none;
+  align-self: flex-end; /* Alinea a la derecha */
+  margin-right: 10px; /* Agrega un margen derecho */
+}
+
+
+
  
  .navbar {
   display: flex;
@@ -126,15 +136,16 @@
   #footer-box {
     background-color: #212121;
     width: 100%;
+    margin-top: 20px;
   }
   
   #footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
-  }
+    align-content: center;}
   
   .footer-col {
     display: flex;
@@ -174,3 +185,148 @@
     margin-top: 20px;
   }
 
+/* Tablets en modo horizontal (landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row; /* Alinea los elementos en una fila */
+    align-items: center;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center;
+    margin-right: 60%; /* Ajusta el margen derecho según el ancho del menú */
+  }
+   
+
+   .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 75px; /* Alinea a la derecha, pero deja espacio para el navbar */
+    left: 0;
+    bottom: 0; /* Extiende el menú hasta la parte inferior de la pantalla */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 32vh;
+    background-color: #252222;
+    z-index: 9999;
+    overflow-y: auto; /* Agrega una barra de desplazamiento si el contenido es largo */
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-right: 130px;
+
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .menu-toggle .icon-close {
+    display: none;
+  }
+  
+  .menu-toggle.show .icon-close {
+    display: block;
+  }
+  
+  .menu-toggle.show .icon-bars {
+    display: none;
+  }
+  
+  .menu-toggle:not(.show) .icon-bars {
+    display: block;
+  }
+  
+}
+/* Teléfonos móviles en modo vertical (portrait) */
+/* Media query para mostrar/ocultar el menú de hamburguesa en dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: row; /* Alinea los elementos en una fila */
+    align-items: center;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center;
+    margin-right: 60%; /* Ajusta el margen derecho según el ancho del menú */
+  }
+   
+
+   .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 75px; /* Alinea a la derecha, pero deja espacio para el navbar */
+    left: 0;
+    bottom: 0; /* Extiende el menú hasta la parte inferior de la pantalla */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 32vh;
+    background-color: #252222;
+    z-index: 9999;
+    overflow-y: auto; /* Agrega una barra de desplazamiento si el contenido es largo */
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-right: 110px;
+
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .menu-toggle .icon-close {
+    display: none;
+  }
+  
+  .menu-toggle.show .icon-close {
+    display: block;
+  }
+  
+  .menu-toggle.show .icon-bars {
+    display: none;
+  }
+  
+  .menu-toggle:not(.show) .icon-bars {
+    display: block;
+  }
+
+  #footer-box {
+    background-color: #212121;
+    width: 117vh;
+  }
+
+
+}

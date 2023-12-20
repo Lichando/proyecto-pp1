@@ -108,3 +108,32 @@
   form a[type="submit"]:hover{
     background-color: #3b641a;
   }
+
+
+
+  @media only screen and (max-width: 767px) {
+
+    body{
+      background-color: #295a95;
+    }
+    .formulario {
+      background-size: cover;
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       width: 118vh;;
+       height: 140vh;
+    }
+
+    .contenido-formulario {
+      border-radius: 10px;
+      margin: 160px;
+      background-color: white;
+      padding: 52px;
+  }
+
+
+  }

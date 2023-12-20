@@ -17,24 +17,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-              <a href="index.html">
-              <img src="../img/green-real-estate-.jpg" alt="GreenHouse" title="GreenHouse Broker">
-              <div class="logo-text">
-                <h2>Green House</h2>
-                <p>Broker Inmobiliario</p>
-              </div>
-              </a>
+      <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="icon-bars">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#1aaf18" d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z"/></svg>
+          </div>
+          <div class="icon-close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 352 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#19af27" d="M242.7 256l100.1-100.1c12.3-12.3 12.3-32.2 0-44.5l-22.2-22.2c-12.3-12.3-32.2-12.3-44.5 0L176 189.3 75.9 89.2c-12.3-12.3-32.2-12.3-44.5 0L9.2 111.5c-12.3 12.3-12.3 32.2 0 44.5L109.3 256 9.2 356.1c-12.3 12.3-12.3 32.2 0 44.5l22.2 22.2c12.3 12.3 32.2 12.3 44.5 0L176 322.7l100.1 100.1c12.3 12.3 32.2 12.3 44.5 0l22.2-22.2c12.3-12.3 12.3-32.2 0-44.5L242.7 256z"/></svg>
+          </div>
+        </div>
+        
+              
+        <div class="logo">
+          <a href="index.html">
+            <img src="../img/green-real-estate-.jpg" alt="GreenHouse" title="GreenHouse Broker">
+            <div class="logo-text">
+              <h2>Green House</h2>
+              <p>Broker Inmobiliario</p>
             </div>
-            <ul class="nav-links">
-              <li><a href="../html/index.html">Inicio</a></li>
-              <li><a href="../html/contact.html">Contacto</a></li>
-              <li><a href="../html/service.html">Servicios</a></li>
-              <li class="login-btn"><a href="../html/login.html">Iniciar Sesion</a></li>
-            </ul>
-          </nav>
+          </a>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="../html/index.html">Inicio</a></li>
+          <li><a href="../html/contact.html">Contacto</a></li>
+          <li><a href="../html/service.html">Servicios</a></li>
+          <li class="login-btn"><a href="../html/login.html">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
     </header>
+    
     <main>
         <section>
         <div class="fullscreen-image">
@@ -49,7 +61,7 @@
           </div>
         </section>
 
-        <section style="margin: 80px;">
+        <section class="opcion">
           <div class="section-option">
             <h2>¿Qué operación estás buscando hacer?</h2>
             <p>Te brindamos las mejores prestaciones para que puedas realizar
@@ -59,12 +71,12 @@
             <div>
               <img src="../img/buying-a-house-property.png">
               <p>Encuentra las mejores ofertas en propiedades y adquiere la casa de tus sueños. Nuestro equipo de expertos te guiará en todo el proceso de compra para que tomes la mejor decisión.</p> <!-- Agrega el texto que desees aquí -->
-              <div class="btn-sel">Comprar</div>
+              <a href="/html/proximamente.html" style="text-decoration: none;"><div class="btn-sel">Comprar</div></a>
             </div>
             <div>
               <img src="../img/casa.png">
               <p>Vende tu propiedad de forma rápida y al mejor precio con nuestra ayuda. Contamos con una amplia red de compradores potenciales y te asesoramos en cada paso del proceso de venta.</p> <!-- Agrega el texto que desees aquí -->
-              <div class="btn-sel">Vender</div>
+              <a href="/html/proximamente.html" style="text-decoration: none;"><div class="btn-sel">Vender</div></a>
             </div>
           </div>
         </section>
@@ -81,57 +93,57 @@
                 <div class="property-overlay">
                   <h3>Riobamba 814, República de la Sexta, Rosario</h3>
                   <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
-                  <a href="/html/propiedades/propiedad1.html">Ver detalles</a>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="property-item">
               <div class="property-image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 2">
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 1">
                 <div class="property-overlay">
-                  <h3>Propiedad 2</h3>
-                  <p>Descripción de la propiedad 2.</p>
-                  <a href="/html/propiedades/propiedad2.html">Ver detalles</a>
+                  <h3>Riobamba 814, República de la Sexta, Rosario</h3>
+                  <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="property-item">
               <div class="property-image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 3">
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 1">
                 <div class="property-overlay">
-                  <h3>Propiedad 3</h3>
-                  <p>Descripción de la propiedad 3.</p>
-                  <a href="/html/propiedades/propiedad3.html">Ver detalles</a>
+                  <h3>Riobamba 814, República de la Sexta, Rosario</h3>
+                  <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="property-item">
               <div class="property-image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 3">
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 1">
                 <div class="property-overlay">
-                  <h3>Propiedad 4</h3>
-                  <p>Descripción de la propiedad 4.</p>
-                  <a href="/html/propiedades/propiedad4.html">Ver detalles</a>
+                  <h3>Riobamba 814, República de la Sexta, Rosario</h3>
+                  <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="property-item">
               <div class="property-image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 3">
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 1">
                 <div class="property-overlay">
-                  <h3>Propiedad 5</h3>
-                  <p>Descripción de la propiedad 3.</p>
-                  <a href="/html/propiedades/propiedad5.html">Ver detalles</a>
+                  <h3>Riobamba 814, República de la Sexta, Rosario</h3>
+                  <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="property-item">
               <div class="property-image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 3">
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/51/90/48/94/1200x1200/1871562577.jpg" alt="Propiedad 1">
                 <div class="property-overlay">
-                  <h3>Propiedad 6</h3>
-                  <p>Descripción de la propiedad 6.</p>
-                  <a href="/html/propiedades/propiedad6.html">Ver detalles</a>
+                  <h3>Riobamba 814, República de la Sexta, Rosario</h3>
+                  <p>Casa · 140m² · 6 Ambientes · $ 300.000</p>
+                  <a href="propiedades/propiedad1.html">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -184,115 +196,6 @@
           </div>
           </div>
         </section>
-        <div class="testimonials-container">
-          <div class="testimonials-carousel owl-carousel">
-          <div class="testimonial">
-            <div class="testimonial-image">
-              <img src="https://img.freepik.com/foto-gratis/apuesto-joven-empresario-traje_273609-6513.jpg" alt="Persona 1">
-            </div>
-            <!-- Testimonio 1: Corredor Inmobiliario -->
-            <div class="testimonial">
-              <div class="testimonial-image">
-                <img src="corredor.jpg" alt="Corredor Inmobiliario">
-              </div>
-              <div class="testimonial-content">
-                <div class="testimonial-name">María Rodríguez</div>
-                <div class="testimonial-profession">Corredora Inmobiliaria</div>
-                <div class="testimonial-rating">
-                  <span class="star"></span>
-                  <span class="star"></span>
-                  <span class="star"></span>
-                  <span class="star"></span>
-                  <span class="star"></span>
-                </div>
-                <div class="testimonial-text">
-                  "Esta plataforma ha sido una herramienta invaluable para mi negocio. Me ha ayudado a conectar con clientes de manera efectiva y agilizar mis transacciones."
-                </div>
-              </div>
-            </div>
-            <!-- Testimonio 2: Escribano -->
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="escribano.jpg" alt="Escribano">
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-name">Luis Martínez</div>
-                  <div class="testimonial-profession">Escribano</div>
-                  <div class="testimonial-rating">
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                  </div>
-                  <div class="testimonial-text">
-                    "Recomiendo encarecidamente esta plataforma para todos los profesionales del sector inmobiliario. Facilita enormemente los procesos legales y documentales."
-                  </div>
-                </div>
-              </div>
-
-                <!-- Testimonio 3: Comprador -->
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="comprador.jpg" alt="Comprador">
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-name">Ana Gómez</div>
-                  <div class="testimonial-profession">Compradora</div>
-                  <div class="testimonial-rating">
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                  </div>
-                  <div class="testimonial-text">
-                    "Gracias a esta plataforma, encontré mi hogar ideal de manera rápida y sencilla. El proceso de búsqueda y selección fue increíblemente eficiente."
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonio 4: Vendedor -->
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="vendedor.jpg" alt="Vendedor">
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-name">Carlos Pérez</div>
-                  <div class="testimonial-profession">Vendedor</div>
-                  <div class="testimonial-rating">
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                  </div>
-                  <div class="testimonial-text">
-                    "Nunca imaginé que la venta de mi propiedad sería tan fluida. Gracias a esta plataforma, encontré un comprador confiable y cerré el trato sin complicaciones."
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonio 5: Asesor Inmobiliario -->
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="asesor.jpg" alt="Asesor Inmobiliario">
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-name">Jorge López</div>
-                  <div class="testimonial-profession">Asesor Inmobiliario</div>
-                  <div class="testimonial-rating">
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                  </div>
-                  <div class="testimonial-text">
-                    "Recomiendo esta plataforma a todos mis clientes. Les brinda información detallada y actualizada, lo que facilita la toma de decisiones informadas."
-                  </div>
-                </div>
-              </div>
-              </div>>
-        </div>
           <section class="formulario">
             <div class="imagen-costado">
               <img src="../img/hombre-irreconocible-vestido-informalmente-usando-telefono-inteligente-trabajo-oficina.jpg" alt="hombre-irreconocible-vestido-informalmente-usando-telefono-inteligente-trabajo-oficina">
